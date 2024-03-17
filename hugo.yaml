@@ -1,0 +1,95 @@
+baseURL: https://coding-ninja-journey.world/
+languageCode: en-us
+title: Coding Ninja Journey
+theme: PaperModX
+paginate: 10
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Coding Ninja Journey
+  description: "Coding Ninja Journey: A Journey to Mastery in Japanese, Programming, and Financial Independence"
+  keywords: [Blog, Japanese, Programming] 
+  author: Misulik
+  images: ["images/logo-coding-ninja-journey.png"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: dark # dark, light, auto 
+  TocSide: 'left' # or right
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true 
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  label:
+        text: "Home"
+        icon: /apple-touch-icon.png
+        iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title:  "Coding Ninja Journey"
+    subtitle: "A Journey to Mastery in Japanese, Programming, and Financial Independence"
+    imageUrl: "images/logo-coding-ninja-journey.png"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image
+    # buttons:
+    #   - name: Posts
+    #     url: posts
+    #   - name: Tags
+    #     url: tags
+
+  # home-info mode
+  # homeInfoParams:
+  #   Title: "Coding Ninja Journey"
+  #   Content: "A Journey to Mastery in Japanese, Programming, and Financial Independence"
+
+  # for search
+    # https://fusejs.io/api/options.html
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
+
+menu:
+  main:
+    - identifier: blog
+      name: Blog
+      url: /posts/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: series
+      name: Series
+      url: /series/
+      weight: 30
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 40
+
