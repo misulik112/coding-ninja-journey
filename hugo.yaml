@@ -43,8 +43,8 @@ params:
     title:  "Coding Ninja Journey"
     subtitle: "A Journey to Mastery in Japanese, Programming, and Financial Independence"
     imageUrl: "images/logo-coding-ninja-journey.png"
-    imageWidth: 120
-    imageHeight: 120
+    imageWidth: 140
+    imageHeight: 140
     imageTitle: my image
     # buttons:
     #   - name: Posts
