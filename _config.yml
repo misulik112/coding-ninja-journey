@@ -1,0 +1,19 @@
+collections:
+  authors:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    Values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    Values:
+      layout: "post"
+  - scope:
+      path: ""
+    Values:
+      layout: "default"
